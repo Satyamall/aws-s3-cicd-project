@@ -33,4 +33,23 @@
 
 # work with s3-cicd-project:
 
+- create .github folder
+- create workflows folder
+- create s3-deploy-main.yml
+- create github repository
+- git init
+- git commit 
+- go to setting and setup secrets actions
+- like AWS_ACCESS_KEY_ID and AWS_SECRET_ACCESS_KEY
+- after go to the aws 
+- create iam user
+- got to the user and create new user
+- click on Next: Permissions
+- create group like developres and choose s3
+- click on Next Tags (Name , website cicd)
+- click on Preview
+- click on create user
+- after it update the access_key and secret_key on github from aws
+- after it push on github
+
 
