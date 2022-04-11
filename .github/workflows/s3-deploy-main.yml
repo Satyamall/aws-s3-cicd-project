@@ -17,3 +17,4 @@ jobs:
     
       - name: Deploy website on s3 bucket
         run: aws s3 sync . s3://aws-class-2-example
+      
