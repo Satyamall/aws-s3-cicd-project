@@ -5,7 +5,7 @@ on:
       -master
 
 jobs:
-  deploy:
+  deploy: 
     runs-on: ubuntu-20.04
     steps:
       - name: Configure AWS Credentials
@@ -15,5 +15,5 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: ap-south-1
     
-    - name: Deploy website on s3 bucket
-      run: aws s3 sync . s3://aws-class-2-example
+      - name: Deploy website on s3 bucket
+        run: aws s3 sync . s3://aws-class-2-example
